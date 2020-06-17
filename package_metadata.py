@@ -13,10 +13,12 @@
     [3]: https://opensource.org/licenses/MIT
     """
 
-from readme import readme
-from pip_safe import pip_safe_name
-from typing import Dict, List, Tuple
 from pathlib import Path
+
+from pip_safe import pip_safe_name
+from readme import readme
+
+from typing import Dict, List, Tuple
 
 # the default version number is '0.0.1'
 __version__: str = '0.0.1'

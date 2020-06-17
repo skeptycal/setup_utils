@@ -1,5 +1,6 @@
-from typing import List
 from pathlib import Path
+
+from typing import List
 
 try:
     DEFAULT_ENCODING

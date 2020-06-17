@@ -17,16 +17,20 @@
 #   $ pip install twine
 
 import re
+
+from functools import lru_cache
 from os import linesep as NL
 from pathlib import Path
 from sys import path as PYTHONPATH
-from setuptools import find_packages, setup
-from functools import lru_cache
-from typing import Dict, Final, List, Optional, Sequence, Tuple
-from colorama import init
 
-import readme
 import pip_safe
+import readme
+
+from colorama import init
+from setuptools import find_packages, setup
+
+from typing import Dict, Final, List, Optional, Sequence, Tuple
+
 # from .readme import readme
 # from .pip_safe import pip_safe_name
 
