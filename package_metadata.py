@@ -16,13 +16,22 @@
 from readme import readme
 from pip_safe import pip_safe_name
 from typing import Dict, List, Tuple
+from pathlib import Path
 
+# the default version number is '0.0.1'
 __version__: str = '0.0.1'
 
+# put a name here to ignore the default ...
+module_name: str = ""
 
-NAME: str = pip_safe_name("setup_utils")
+# the default package name is the name of the parent folder ...
+if not module_name:
+    module_name = Path(__file__).resolve().parent.name
 
-VERSION: str = __version__  # "0.4.4"
+# make the name safe for Pypi.org upload
+NAME: str = pip_safe_name(module_name)
+
+VERSION: str = __version__
 VERSION_INFO: Tuple[int] = VERSION.split(".")
 DESCRIPTION: str = "System utilities for Python on macOS."
 REQUIRES_PYTHON: str = ">=3.8.0"

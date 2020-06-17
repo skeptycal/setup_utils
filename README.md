@@ -54,7 +54,7 @@ _Tell your computer what to do!"_
 
 ---
 
-## Implore (with Autosys) version 0.4.4
+## Take a look at Implore
 
 ### Features include:
 
@@ -85,7 +85,7 @@ _Tell your computer what to do!"_
 -   **BibTex**
 -   **Time**
 
-_Implore requires Python 3.8+ and works best with **lxml** (fast html) and **ujson** (fast json) installed. Text messaging requires macOS._
+_Implore requires Python 3.8+ and works best with **lxml** (fast html) and **ujson** (fast json) installed. Text messaging requires macOS, at least until someone tells me a better way to do it._
 
 [![GitHub Pipenv locked Python version](https://img.shields.io/badge/Python-3.8-yellow?color=3776AB&logo=python&logoColor=yellow)](https://www.python.org/) ![Django v3](https://img.shields.io/badge/Django-v3-%23092E20?logo=django&color=#339933)
 
@@ -102,63 +102,6 @@ _Implore requires Python 3.8+ and works best with **lxml** (fast html) and **ujs
 ## A solid foundation
 
 > Implore uses _Requests_ and _Beautiful Soup_ to parse html and scrape web data. Website output if mostly _Flask_ based. The majority of other functionality is original code.
-
----
-
-## Requests: HTTP for Humans™
-
-![Requests graphic](images/requests-sidebar.jpg)
-
-_Requests is an elegant and simple HTTP library for Python, built for human beings._
-
-[Requests Documentation](https://requests.readthedocs.io/en/master/)
-
-> Requests allows you to send HTTP/1.1 requests extremely easily. There’s no need to manually add query strings to your URLs, or to form-encode your POST data. Keep-alive and HTTP connection pooling are 100% automatic, thanks to urllib3.
-
-#### Beloved Features
-
-_Requests is ready for today’s web._
-
--   Keep-Alive & Connection Pooling
--   International Domains and URLs
--   Sessions with Cookie Persistence
--   Browser-style SSL Verification
--   Automatic Content Decoding
--   Basic/Digest Authentication
--   Elegant Key/Value Cookies
--   Automatic Decompression
--   Unicode Response Bodies
--   HTTP(S) Proxy Support
--   Multipart File Uploads
--   Streaming Downloads
--   Connection Timeouts
--   Chunked Requests
--   .netrc Support
-
----
-
-## Beautiful Soup
-
-![Beautiful Soup graphic](images/bs4.png)
-
-_Elixir and Tonic_
-"The Screen-Scraper's Friend"
-[Beautiful Soup Documentation](http://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-Copyright (c) 2004-2019 Leonard Richardson
-MIT License
-
-> Beautiful Soup uses a pluggable XML or HTML parser to parse a (possibly invalid) document into a tree representation. Beautiful Soup provides methods and Pythonic idioms that make it easy to navigate, search, and modify the parse tree.
-
----
-
-## Flask
-
-![Flask](images/flask.png)
-
-_Web development, one drop at a time_
-[Flask Documentation](https://palletsprojects.com/p/flask/)
-
-> Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications. It began as a simple wrapper around Werkzeug and Jinja and has become one of the most popular Python web application frameworks.
 
 [1]: (https://www.github.com/skeptycal/autosys)
 [link_netlify]: (https://app.netlify.com/sites/mystifying-keller-ab5658/deploys)
