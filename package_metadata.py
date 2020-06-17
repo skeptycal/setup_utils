@@ -26,7 +26,7 @@ VERSION: str = __version__  # "0.4.4"
 VERSION_INFO: Tuple[int] = VERSION.split(".")
 DESCRIPTION: str = "System utilities for Python on macOS."
 REQUIRES_PYTHON: str = ">=3.8.0"
-PACKAGE_DIR: Dict = {'': f'{NAME}'}
+# PACKAGE_DIR: Dict = {f'{NAME}'}
 PACKAGE_EXCLUDE: List[str] = ['*test*', '*bak*']
 LICENSE: str = "MIT"
 LONG_DESCRIPTION: str = readme()
@@ -48,22 +48,7 @@ REQUIRED: List[str] = [
 ]
 
 # What packages are optional?
-EXTRAS: Dict = {
-    ":python_version < '3.5'": ["typing==3.6.1", ],
-    "dev": [
-        "black>=19.3b0 ; python_version>='3.8'",
-        "codecov>=2.0.15",
-        "flake8>=3.7.7",
-        "isort>=4.3.20",
-        "tox>=3.9.0",
-        "tox-travis>=0.12",
-        "pytest>=4.6.2",
-        "pytest-cov>=2.7.1",
-        "Sphinx>=2.2.1",
-        "sphinx-autobuild>=0.7.1",
-        "sphinx-rtd-theme>=0.4.3",
-    ]
-}
+EXTRAS: Dict = {}
 
 PACKAGE_DATA: Dict = {
     # If any package contains these files, include them:

@@ -20,16 +20,20 @@ import re
 from os import linesep as NL
 from pathlib import Path
 from sys import path as PYTHONPATH
-from setuptools import find_namespace_packages, setup
+from setuptools import find_packages, setup
 from functools import lru_cache
 from typing import Dict, Final, List, Optional, Sequence, Tuple
+from colorama import init
 
-from readme import readme
-from pip_safe import pip_safe_name
+import readme
+import pip_safe
+# from .readme import readme
+# from .pip_safe import pip_safe_name
 
 if True:
     from package_metadata import *
 
+init()
 
 here = Path(__file__).resolve().parent
 if here not in PYTHONPATH:
@@ -37,15 +41,15 @@ if here not in PYTHONPATH:
 
 
 def main():
-    print(f"setup for '{NAME}' version {VERSION}")
+    print(f"Setup for '{NAME}' version {VERSION}")
 
     setup(
         name=NAME,
         version=VERSION,
         description=DESCRIPTION,
         python_requires=REQUIRES_PYTHON,
-        package_dir=PACKAGE_DIR,
-        packages=find_namespace_packages(
+        # package_dir=PACKAGE_DIR,
+        packages=find_packages(
             f'{NAME}', exclude=PACKAGE_EXCLUDE),
         # py_modules=[f"{NAME}"],
         license=LICENSE,
