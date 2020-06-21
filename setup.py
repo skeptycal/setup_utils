@@ -118,7 +118,7 @@ REQUIRES_PYTHON: str = ">=3.8.0"
 # PACKAGE_DIR: Dict = {f'{NAME}'}
 PACKAGE_EXCLUDE: List[str] = ['*test*', '*bak*']
 LICENSE: str = "MIT"
-LONG_DESCRIPTION: str = readme()
+LONG_DESCRIPTION: str = get_file_contents('README.md')
 LONG_DESCRIPTION_CONTENT_TYPE: str = "text/markdown"
 # LONG_DESCRIPTION_CONTENT_TYPE="text/x-rst",
 AUTHOR: str = "Michael Treanor"
