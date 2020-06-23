@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-""" AutoSys Setup
+""" setup_utils Setup
     ---
     Part of the [AutoSys][1] package
 
