@@ -30,8 +30,6 @@ except:
     from locale import getpreferredencoding
     DEFAULT_ENCODING: str = getpreferredencoding(do_setlocale=True) or "utf-8"
 
-# the default version number is '0.0.1'
-__version__: str = '0.0.1'
 
 # put a name here to ignore the default ...
 module_name: str = ""
@@ -111,8 +109,6 @@ def get_file_contents(file_name: str = "readme.md", search_list: List[str] = ["r
 # make the name safe for Pypi.org upload
 NAME: str = pip_safe_name(module_name)
 
-VERSION: str = __version__
-VERSION_INFO: Tuple[int] = VERSION.split(".")
 DESCRIPTION: str = "System utilities for Python on macOS."
 REQUIRES_PYTHON: str = ">=3.8.0"
 # PACKAGE_DIR: Dict = {f'{NAME}'}
